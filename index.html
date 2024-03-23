@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid System2</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.css">
+<style>
+    .grid-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .grid-sizer, .grid-item {
+        width: calc(33.33% - 20px);
+    }
+    @media (max-width: 768px) {
+        .grid-sizer, .grid-item {
+            width: 100%;
+        }
+    }
+    body {
+    background-image: url('huhu1.jpg');
+    background-size: cover;
+    }
+        }
+    }
+    div {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+    div img:hover {
+        filter: grayscale(1);
+        transform: scale(1.03);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center my-4"><a href="#" class="text-white bg-dark">Masonry Image Gallery</h1>
+    <div class="grid">
+      <div class="row">
+        <div class="grid-sizer"></div>
+        <div class="grid-item"><img src="Rpnzl.jpg" height_width="300x400" class="img-fluid" alt="Image 1"></div>
+        <div class="grid-item"><img src="Rpnzl1.jpg" height_width="400x300" class="img-fluid" alt="Image 2"></div>
+        <div class="grid-item"><img src="Rpnzl2.jpg" height_width="350x350" class="img-fluid" alt="Image 3"></div>
+        <div class="grid-item"><img src="Rpnzl3.jpg" height_width="350x350" class="img-fluid" alt="Image 4"></div>
+        <div class="grid-item"><img src="Rpnzl4.jpg" height_width="350x350" class="img-fluid" alt="Image 5"></div>      
+        <div class="grid-item"><img src="Rpnzl5.jpg" height_width="350x350" class="img-fluid" alt="Image 6"></div>
+        
+        <div class="grid-item"><img src="Rpnzl6.jpg" height_width="350x350" class="img-fluid" alt="Image 7"></div>
+        
+        <div class="grid-item"><img src="Rpnzl7.jpg" height_width="350x350" class="img-fluid" alt="Image 8"></div>
+        
+        <div class="grid-item"><img src="Rpnzl8.jpg" height_width="350x350" class="img-fluid" alt="Image 9"></div>
+        
+        <div class="grid-item"><img src="Rpnzl9.jpg" height_width="350x350" class="img-fluid" alt="Image 10"></div>
+        
+        <div class="grid-item"><img src="Rpnzl10.jpg" height_width="350x350" class="img-fluid" alt="Image 11"></div>
+        
+        <div class="grid-item"><img src="Rapunzel12.jpg" height_width="350x350" class="img-fluid" alt="Image 12"></div>
+      </div>
+    </div>
+</div>
+  <center>
+    <audio controls autoplay>
+  <source src="Tangled.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+    </audio>
+  </center>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script>
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+    });
+</script>
+</body>
+</html>
